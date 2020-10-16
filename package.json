@@ -1,0 +1,16 @@
+{
+  "name": "drupal-fe-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Willi Woldt <willi.woldt@ueberbit.de>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "minimist": "^1.2.5",
+    "touch": "^3.1.0"
+  }
+}
