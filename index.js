@@ -6,6 +6,10 @@ const figlet = require('figlet');
 
 const files = require('./lib/files');
 const inquirer = require('./lib/inquirer');
+const dependencies = require('./lib/dependencies');
+
+const tailwind = require('./config/tailwind');
+const typescript = require('./config/typescript');
 
 clear();
 
@@ -22,8 +26,10 @@ const setup = async () => {
 
 const run = async () => {
   try {
-    const answers = await setup();
-    console.log(answers);
+    // const answers = await setup();
+    // console.log(answers);
+    console.log({...tailwind.dependencies,...typescript.dependencies});
+    dependencies.add({...tailwind.dependencies,...typescript.dependencies});
   } catch(err) {
     console.log(err);
   }

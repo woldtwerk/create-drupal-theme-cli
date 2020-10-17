@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Target latest version of ECMAScript.
+    "target": "es5",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Process & infer types from .js files.
+    "allowJs": true,
+    // Don't emit; allow Babel to transform files.
+    "noEmit": true,
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+    // Disallow features that require cross-file information for emit.
+    "isolatedModules": false,
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "module": "es2015"
+  },
+  "include": ["web/themes/custom/**/js/**/*", "webpack.config.js",
+    "web/modules/custom/tailwind*/**/*", "storybook/**/*.ts"],
+  "exclude": ["node_modules"]
+}

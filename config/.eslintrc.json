@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "./web/.eslintrc.json",
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    // disable to avoid linelength conflicts
+    "implicit-arrow-linebreak": "off",
+    "import/prefer-default-export": "off",
+    "function-paren-newline": "off"
+  }
+}

@@ -1,0 +1,11 @@
+web/core/*
+web/vendor/*
+web/libraries/*
+web/sites/*
+web/profiles/*
+web/modules/contrib/*
+web/themes/contrib/*
+web/themes/custom/**/*.bundle.css
+node_modules/*
+*.yml
+*.map
