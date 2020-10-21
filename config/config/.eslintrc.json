@@ -1,12 +1,15 @@
 {
   "extends": [
     "./web/.eslintrc.json",
-    "airbnb-typescript/base",
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
+    <% if (typescript) { %>
+      "airbnb-typescript/base",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:import/typescript",
+    <% } %>
     "plugin:prettier/recommended",
-    "plugin:import/typescript"
   ],
+  <% if (typescript) { %>
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -25,4 +28,5 @@
     "import/prefer-default-export": "off",
     "function-paren-newline": "off"
   }
+  <% } %>
 }

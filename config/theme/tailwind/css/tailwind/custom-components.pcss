@@ -1,0 +1,19 @@
+/* Tailwind custom components. */
+
+@layer components {
+  .link {
+    @apply transition ease-in-out duration-150 text-gray-500;
+
+    &:hover {
+      @apply text-gray-900;
+    }
+
+    &:focus {
+      @apply outline-none text-gray-900;
+    }
+  }
+
+  .mb--2 {
+    margin-bottom: -2px;
+  }
+}

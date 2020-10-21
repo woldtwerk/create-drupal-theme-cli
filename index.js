@@ -8,8 +8,7 @@ const files = require('./lib/files');
 const inquirer = require('./lib/inquirer');
 const dependencies = require('./lib/dependencies');
 
-const tailwind = require('./config/tailwind');
-const typescript = require('./config/typescript');
+const packages = require('./config/packages');
 
 clear();
 
@@ -26,10 +25,15 @@ const setup = async () => {
 
 const run = async () => {
   try {
-    // const answers = await setup();
-    // console.log(answers);
-    console.log({...tailwind.dependencies,...typescript.dependencies});
-    dependencies.add({...tailwind.dependencies,...typescript.dependencies});
+    // Run questiions.
+    const answers = await setup();
+    console.log(answers);
+
+    // Create Theme directory.
+    files.createDirectory(`${answers.themePath}/${answers.themeName}`);
+
+    // Install node packages
+    dependencies.add({...packages.tailwind});
   } catch(err) {
     console.log(err);
   }

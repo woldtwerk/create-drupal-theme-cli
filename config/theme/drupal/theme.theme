@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Implements theme related functions.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function tailwind_preprocess_page(&$variables) {
+
+}

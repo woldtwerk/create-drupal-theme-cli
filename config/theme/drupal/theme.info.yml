@@ -1,0 +1,20 @@
+name: tailwind
+type: theme
+description: 'woldtwerk by by Willi Woldt.'
+package: tailwind
+base theme: false
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - tailwind/globals
+
+regions:
+  header: Header
+  messages: Messages
+  content: Content
+  footer: Footer
+
+# component-libraries:
+#   storybook:
+#     paths:
+#       - ../../../../storybook/twig

@@ -1,0 +1,11 @@
+globals:
+  version: VERSION
+  js:
+    dist/main.bundle.js: {}
+  css:
+    base:
+      dist/style.bundle.css: {}
+      dist/tailwind_utilities.bundle.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

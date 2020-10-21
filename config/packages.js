@@ -4,14 +4,15 @@ module.exports = {
     "tailwindcss": "latest"
   },
   bootstrap: {
-
+    "bootstrap": "next"
   },
   foundation: {
-
+    "foundation-sites": "latest"
   },
   typescript: {
     "@babel/preset-typescript": "latest",
     "@typescript-eslint/parser": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
     "eslint-config-airbnb-typescript": "latest",
     "typescript": "latest",
   },
@@ -20,7 +21,6 @@ module.exports = {
     "@babel/plugin-transform-runtime": "latest",
     "@babel/preset-env": "latest",
     "@babel/runtime": "latest",
-    "@typescript-eslint/eslint-plugin": "latest",
     "browser-sync": "latest",
     "browser-sync-webpack-plugin": "latest",
     "autoprefixer": "latest",
