@@ -2,12 +2,9 @@
 module.exports = {s
   plugins: [
     require('cssnano'),
-    <%_ if (tailwind) { %>
     require('postcss-import'),
-    require('tailwindcss'),
+    require('autoprefixer'),
     require('precss'),
     require('postcss-nested'),
-    <% } -%>
-    require('autoprefixer'),
   ],
 };

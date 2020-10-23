@@ -17,7 +17,6 @@
     "noImplicitAny": false,
     "module": "es2015"
   },
-  "include": ["web/themes/custom/**/js/**/*", "webpack.config.js",
-    "web/modules/custom/tailwind*/**/*", "storybook/**/*.ts"],
+  "include": ["web/themes/custom/**/js/**/*", "webpack.config.js"],
   "exclude": ["node_modules"]
 }

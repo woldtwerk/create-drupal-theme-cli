@@ -6,22 +6,26 @@
       "ignoreAtRules": [
         "import",
         "extends",
+        <%_ if (tailwind) { %>
         "tailwind",
         "layer",
         "apply",
         "variants",
         "responsive",
+        <% } -%>
         "screen"
         ]
     }],
     "at-rule-no-unknown": [ true, {
       "ignoreAtRules": [
         "extends",
+        <%_ if (tailwind) { %>
         "tailwind",
         "layer",
         "apply",
         "variants",
         "responsive",
+        <% } -%>
         "screen"
       ]
     }]
