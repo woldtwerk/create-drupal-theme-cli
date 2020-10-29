@@ -1,0 +1,17 @@
+.toolbar-horizontal {
+  .layout-container {
+    min-height: calc(100vh - 40px);
+  }
+
+  &.toolbar-tray-open {
+    .layout-container {
+      min-height: calc(100vh - 80px);
+    }
+  }
+}
+
+.toolbar-vertical {
+  .layout-container {
+    min-height: calc(100vh - 40px);
+  }
+}

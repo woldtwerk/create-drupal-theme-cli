@@ -26,11 +26,9 @@ const setup = async () => {
   return answers;
 };
 
-const writeTemplate = () => {
-  let file = `postcss.config.js`;
-  let contents = files.readFile(`${__dirname}/config/config/${file}`);
-  contents = ejs.render(contents, { tailwind: false });
-  files.writeFile(`${file}`, contents);
+const writeTemplate = (file, data) => {
+  contents = files.renderTemplate(file, data);
+  files.writeFile(path, file, contents);
 }
 
 const run = async () => {
@@ -42,10 +40,14 @@ const run = async () => {
     // Create Theme directory.
     files.createDirectory(`${answers.themePath}/${answers.themeName}`);
 
-    // Install node packages
-    dependencies.add({...packages.tailwind});
+    // Install common node packages
+    // dependencies.add({...packages.common});
+    // // Install typescript specific node packages
+    // if(answers.typescript) dependencies.add({...packages.typescript});
+    // // Install common framework specific packages
+    // dependencies.add({...packages[answers.framework]});
 
-    writeTemplate();
+    writeTemplate('', `${__dirname}/config/config/${postcss.config.js}`, answers);
   } catch(err) {
     console.log(err);
   }

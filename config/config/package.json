@@ -1,0 +1,13 @@
+{
+  "name": "<%= themeName %>",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --bail --mode production",
+    "devel": "webpack --watch --mode development",
+    "cs": "./vendor/bin/phpcs && eslint -c ./.eslintrc.json docroot/ && stylelint --config ./.sytlelintrc.json docroot/",
+    "cs:fix": "./vendor/bin/phpcbf && eslint -c ./.eslintrc.json --fix docroot/ && stylelint --config ./.stylelintrc.json --fix docroot/",
+    "cs:styles": "stylelint --config ./.sytlelintrc.json docroot/",
+    "cs:js": "eslint -c ./.eslintrc.json docroot/",
+    "cs:php": "./vendor/bin/phpcs"
+  }
+}

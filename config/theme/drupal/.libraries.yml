@@ -1,11 +1,15 @@
 globals:
-  version: VERSION
+  version: 1.0
   js:
     dist/main.bundle.js: {}
   css:
     base:
       dist/style.bundle.css: {}
+      <%_ if (tailwind) { %>
       dist/tailwind_utilities.bundle.css: {}
+      <% } -%>
   dependencies:
     - core/drupal
+    <%_ if (foundation) { %>
     - core/jquery
+    <% } -%>

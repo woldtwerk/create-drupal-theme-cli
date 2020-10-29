@@ -1,6 +1,10 @@
 {
 	"presets": [
-			"@babel/typescript"
+			<% if (typescript) { %>
+				"@babel/typescript"
+			<%} else { %>
+				"@babel/preset-env"
+			<% } %>
 	],
 	"plugins": [
       "@babel/plugin-transform-runtime"

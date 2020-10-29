@@ -1,12 +1,12 @@
-name: tailwind
+name: <%= themeName %>
 type: theme
-description: 'woldtwerk by by Willi Woldt.'
-package: tailwind
+description: '<%= themeName %> Theme'
+package: <%= themeName %>
 base theme: false
 core: 8.x
 core_version_requirement: ^8 || ^9
 libraries:
-  - tailwind/globals
+  - <%= themeName %>/globals
 
 regions:
   header: Header

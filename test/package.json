@@ -1,10 +1,6 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "author": "Willi Woldt <willi.woldt@ueberbit.de>",
-  "license": "MIT",
   "dependencies": {
     "@tailwindcss/ui": "^0.6.2",
-    "tailwindcss": "^1.9.5"
+    "tailwindcss": "^1.9.6"
   }
 }
